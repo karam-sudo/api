@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Product;
 
 
-class Reviews extends Model
+class Review extends Model
 {
     use HasFactory;
 
     public function product(){
 
-        return $this->belongsTo(product::class);
+        return $this->belongsTo(Product::class);
     }
 }
