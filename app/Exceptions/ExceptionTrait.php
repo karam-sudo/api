@@ -23,6 +23,8 @@ public function apiException($request, $e){
             return $this->HttpResponse($e);
            }
 
+           return parent::render($request, $e);
+
 }
 
 
