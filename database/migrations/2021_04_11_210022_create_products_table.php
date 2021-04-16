@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->integer('stock');
             $table->integer('discount');
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->nullable;
             $table->timestamps();
         });
     }
