@@ -9,6 +9,6 @@ class ProductNotBelongToUser extends Exception
     //
     public function render(){
 
-        return ['errors'=>'product dont belong to user'];
+        return ['errors'=>'product not belongs to user'];
     }
 }
